@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electric Shavers For Men | Raptor Shavers</title>
+  <meta charset="utf-8">
+  <script src="js/easing.js"></script>
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/highlight-menu.js"></script>
+    <header>
+        <nav>
+            <a href="index.html"> <img src="images/logo2.png" alt="Raptor Electric Shaver logo"></a>
+            <div class="navigation">
+              <ul>
+                <li class="menu-item"><a href="index.html">HOME</a></li>
+                <li class="menu-item"><a href="about.html">ABOUT US</a></li>
+                <li class="menu-item"><a href="products.html">SPECIALS</a></li>
+                <li class="menu-item"><a href="media.html">MEDIA</a></li>
+                <li class="menu-item"><a href="team.html">OUR TEAM</a></li>
+                <li class="menu-item"><a href="training.html">TRAININGS</a></li>
+                <li class="menu-item"><a href="contact.html">CONTACT US</a></li>
+                <li class="menu-item"><a href="gallery.html">GALLERY</a></li>
+                <li class="menu-item"><a href="faq.html">FAQ</a></li>
+                <li class="dropdown">
+                  <button class="dropbtn">REPORTS</button>
+                  <div class="dropdown-content">
+                    <a href="http://185.113.4.41:7227/WEB1.HTML">WEB1</a>
+                    <a href="http://185.113.4.41:7227/WEB2.HTML">WEB2</a>
+                    <a href="http://185.113.4.41:7227/WEB3.HTML">WEB3</a>
+                    <a href="http://185.113.4.41:7227/WEB4.HTML">WEB4</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+  <main id="faqs">
+    <img src="images/bannerSmall.png" alt="Raptor banner" class="about-banner">
+
+    <h1>Frequently Asked QUestions</h1>
+
+    <h2 class="faq-heading">How does Raptor work?</h2>
+    <div class="faq-content">
+        <p>Gillette On Demand is designed to make shaving easier than ever before – and on your terms.
+            First, pick the Raptor razor and blade refills that are best for you. Then, select whether 
+            you would like to make a one-time purchase or subscribe for monthly deliveries. 
+            A subscription shave plan is the easiest way to have fresh blades delivered to your door. 
+            There is no red tape, no annual commitments, and no hidden extras. You can change your plan or cancel at any time.</p>
+    </div>
+
+    <h2 class="faq-heading">How can I modify or cancel my subscription?</h2>
+    <div class="faq-content">
+        <p>The subscription program is easy to join, manage and cancel at any time. Log in and select
+             “my account” to modify your subscription.</p>
+    </div>
+
+    <h2 class="faq-heading">How long will my order take to arrive?</h2>
+    <div class="faq-content">
+        <p>Your package usually arrives within 2-7 business days of when you place your order. You can 
+            track all shipments on your account page. If you placed
+             a subscription order, select “subscription” to check your order status or make changes. If 
+             you placed a one-time order, your order will appear at the bottom of your account page.
+
+            Once your order ships, you will receive a shipping confirmation email that will include any 
+            tracking information. Any recurring shipments are determined by the frequency you selected 
+            when creating your shave plan.</p>
+    </div>
+
+    <h2 class="faq-heading">Why did the price of my subscription change?</h2>
+    <div class="faq-content">
+        <p>All prices and availability of products, including those for existing subscriptions, are 
+            subject to change without notice, up until the order is completed and confirmed. We make 
+            every effort to provide you the most accurate information on pricing and availability. 
+            All subscribers will receive a reminder confirmation email 10 days prior to your 
+            subscription’s next ship date with the details of your next order, including the total 
+            estimated cost for each subscription order. Please refer to our Store Policy for more details.</p>
+    </div>
+
+    <br>
+    <br>
+
+  </main>
+  <footer>&copy; Copyright 2015. All Rights Reserved. <br>
+    <a href="mailto:customerservice@raptor.ca">Request Information</a><br>
+    Maria Joseph  c0877511
+  </footer>
+  <script>
+    // JavaScript example
+const faqElements = document.querySelectorAll('.faq');
+
+faqElements.forEach(faq => {
+  faq.addEventListener('click', () => {
+    faq.nextElementSibling.classList.toggle('active');
+  });
+});
+
+// jQuery example
+$('.faq').click(function() {
+  $(this).next('.faq-content').toggleClass('active');
+});
+
+$(document).ready(function() {
+  $('#myMenu ul li').hover(
+    function() {
+      $(this).animate({backgroundColor: '#FF9900'}, 'fast');
+    },
+    function() {
+      $(this).animate({backgroundColor: '#333333'}, 'fast');
+    }
+  );
+});
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/highlight-menu.js"></script>
+    <header>
+        <nav>
+            <a href="index.html"> <img src="images/logo2.png" alt="Raptor Electric Shaver logo"></a>
+            <div class="navigation">
+              <ul>
+                <li class="menu-item"><a href="index.html">HOME</a></li>
+                <li class="menu-item"><a href="about.html">ABOUT US</a></li>
+                <li class="menu-item"><a href="products.html">SPECIALS</a></li>
+                <li class="menu-item"><a href="media.html">MEDIA</a></li>
+                <li class="menu-item"><a href="team.html">OUR TEAM</a></li>
+                <li class="menu-item"><a href="training.html">TRAININGS</a></li>
+                <li class="menu-item"><a href="contact.html">CONTACT US</a></li>
+                <li class="menu-item"><a href="gallery.html">GALLERY</a></li>
+                <li class="menu-item"><a href="faq.html">FAQ</a></li>
+                <li class="dropdown">
+                  <button class="dropbtn">REPORTS</button>
+                  <div class="dropdown-content">
+                    <a href="http://185.113.4.41:7227/WEB1.HTML">WEB1</a>
+                    <a href="http://185.113.4.41:7227/WEB2.HTML">WEB2</a>
+                    <a href="http://185.113.4.41:7227/WEB3.HTML">WEB3</a>
+                    <a href="http://185.113.4.41:7227/WEB4.HTML">WEB4</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+  <title>Employee Data</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .employee {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .employee h2 {
+      margin-top: 0;
+    }
+    .employee p {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="employee-data"></div>
+
+  <script>
+    $(document).ready(function() {
+      $.getJSON("employee.json", function(data) {
+        $.each(data.employees, function(index, employee) {
+          var employeeHTML = '<div class="employee">' +
+            '<h2>' + employee.name + '</h2>' +
+            '<p>' + employee.title + ' - ' + employee.department + '</p>' +
+            '<p>' + employee.bio + '</p>' +
+            '</div>';
+          $('#employee-data').append(employeeHTML);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

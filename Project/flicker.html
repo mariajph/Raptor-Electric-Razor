@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display Images from Flickr using jQuery</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<style>
+		img {
+			width: 300px;
+			height: 200px;
+			object-fit: cover;
+			margin: 10px;
+		}
+	</style>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="js/highlight-menu.js"></script>
+     <header>
+         <nav>
+             <a href="index.html"> <img src="images/logo2.png" alt="Raptor Electric Shaver logo"></a>
+             <div class="navigation">
+               <ul>
+                 <li class="menu-item"><a href="index.html">HOME</a></li>
+                 <li class="menu-item"><a href="about.html">ABOUT US</a></li>
+                 <li class="menu-item"><a href="products.html">SPECIALS</a></li>
+                 <li class="menu-item"><a href="media.html">MEDIA</a></li>
+                 <li class="menu-item"><a href="team.html">OUR TEAM</a></li>
+                 <li class="menu-item"><a href="training.html">TRAININGS</a></li>
+                 <li class="menu-item"><a href="contact.html">CONTACT US</a></li>
+                 <li class="menu-item"><a href="gallery.html">GALLERY</a></li>
+                 <li class="menu-item"><a href="faq.html">FAQ</a></li>
+                 <li class="dropdown">
+                   <button class="dropbtn">REPORTS</button>
+                   <div class="dropdown-content">
+                     <a href="http://185.113.4.41:7227/WEB1.HTML">WEB1</a>
+                     <a href="http://185.113.4.41:7227/WEB2.HTML">WEB2</a>
+                     <a href="http://185.113.4.41:7227/WEB3.HTML">WEB3</a>
+                     <a href="http://185.113.4.41:7227/WEB4.HTML">WEB4</a>
+                   </div>
+                 </li>
+               </ul>
+             </div>
+           </nav>
+     </header>
+</head>
+<body>
+	<div id="image-container">
+		<!-- Images will be displayed here -->
+	</div>
+
+	<script>
+		$(document).ready(function() {
+			// Flickr API key
+			var apiKey = "7d157e344445401f7fadafb304743aa7";
+
+			// Search query for the images
+			var searchQuery = "#razor";
+
+			// Flickr API endpoint to search for photos
+			var flickrApiEndpoint = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=" + apiKey + "&format=json&nojsoncallback=1&text=" + searchQuery;
+
+			// Fetch the photos from Flickr API
+			$.getJSON(flickrApiEndpoint, function(data) {
+				// Loop through each photo and create an <img> element for it
+				$.each(data.photos.photo, function(index, photo) {
+					var imageUrl = "https://live.staticflickr.com/" + photo.server + "/" + photo.id + "_" + photo.secret + "_c.jpg";
+					var imgElement = $("<img>").attr("src", imageUrl);
+					$("#image-container").append(imgElement);
+				});
+			});
+		});
+	</script>
+</body>
+</html>

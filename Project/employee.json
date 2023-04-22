@@ -1,0 +1,58 @@
+{
+    "employees": [
+      {
+        "name": "John Smith",
+        "title": "Software Engineer",
+        "department": "Engineering",
+        "bio": "John is a skilled software engineer with experience in developing web applications using Node.js and React. He is passionate about creating high-quality software that solves real-world problems. In his free time, John enjoys playing guitar and hiking in the mountains."
+      },
+      {
+        "name": "Emily Chen",
+        "title": "Marketing Manager",
+        "department": "Marketing",
+        "bio": "Emily is an experienced marketing manager with a background in digital marketing and brand management. She has worked with a variety of clients in the tech industry and is passionate about creating effective marketing campaigns that resonate with customers. In her free time, Emily enjoys painting and traveling to new places."
+      },
+      {
+        "name": "David Lee",
+        "title": "Product Manager",
+        "department": "Product",
+        "bio": "David is a seasoned product manager with experience in both hardware and software products. He is skilled in working with cross-functional teams to develop and launch successful products. In his free time, David enjoys playing basketball and reading science fiction novels."
+      },
+      {
+        "name": "Jennifer Kim",
+        "title": "HR Manager",
+        "department": "HR",
+        "bio": "Jennifer is an experienced HR manager with a background in employee relations and talent acquisition. She is passionate about creating a positive work environment where employees can thrive and grow. In her free time, Jennifer enjoys practicing yoga and cooking Korean food."
+      },
+      {
+        "name": "Michael Wang",
+        "title": "Data Analyst",
+        "department": "Data",
+        "bio": "Michael is a data analyst with experience in data modeling and statistical analysis. He is skilled in using SQL, Python, and R to extract insights from large datasets. In his free time, Michael enjoys playing video games and watching basketball."
+      },
+      {
+        "name": "Sophia Liu",
+        "title": "UX Designer",
+        "department": "Design",
+        "bio": "Sophia is a talented UX designer with experience in designing user interfaces for web and mobile applications. She is passionate about creating intuitive and user-friendly designs that enhance the user experience. In her free time, Sophia enjoys practicing photography and traveling to new places."
+      },
+      {
+        "name": "Daniel Kim",
+        "title": "Sales Manager",
+        "department": "Sales",
+        "bio": "Daniel is an experienced sales manager with a background in business development and account management. He is skilled in building strong relationships with customers and driving revenue growth. In his free time, Daniel enjoys playing tennis and watching movies."
+      },
+      {
+        "name": "Jessica Lee",
+        "title": "Content Writer",
+        "department": "Marketing",
+        "bio": "Jessica is a talented content writer with experience in writing blog posts, social media content, and email newsletters. She is passionate about creating high-quality content that engages and informs readers. In her free time, Jessica enjoys reading books and hiking in nature."
+      },
+      {
+        "name": "Kevin Chen",
+        "title": "Software Engineer",
+        "department": "Engineering",
+        "bio": "Kevin is a skilled software engineer with experience in developing backend systems using Java and Spring. He is passionate about creating scalable and reliable software that powers modern applications. In his free time, Kevin enjoys playing video games and practicing martial arts."
+      }
+    ]
+}  

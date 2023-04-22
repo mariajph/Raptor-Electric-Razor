@@ -1,0 +1,34 @@
+.contact-form{
+    max-width: 60%;
+}
+h2, h3{
+    color: white;
+    padding-left: 25px;
+    padding-top: 15px;
+    text-align: center;
+}
+.contact-form label, input, textarea{
+    display: block;
+    padding: 5px;
+}
+.contact-form textarea, input{
+    width: 97%;
+    border-radius: 10px;
+}
+form ul{
+	list-style-type: none;
+}
+
+.btn:hover{
+    background-color: grey;
+}
+
+fieldset{
+    max-width: 60%;
+    margin:2rem auto;
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgb(42, 41, 41);
+    color: white;
+}
